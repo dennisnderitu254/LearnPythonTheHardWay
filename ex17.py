@@ -14,6 +14,8 @@ in_file = open(from_file)
 
 indata = in_file.read()
 
+# the len() is used here to get the length of the string
+
 print "The input file is %d bytes long" % len(indata)
 
 print "Does the output file exist? %r" % exists(to_file)
@@ -29,3 +31,4 @@ print "Alright, all done."
 
 out_file.close()
 in_file.close()
+
