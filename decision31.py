@@ -1,7 +1,11 @@
 
 print "You enter a dark room with two doors. Do you go through door #1 or door #2?"
+ # pick your number
 
 door = raw_input("> ")
+
+# does not execute the user input
+
 
 if door == "1":
 	print "There's a giant bear here eating a cheese cake. What do you do?"
@@ -42,6 +46,11 @@ elif door == "2":
 
 else:
 		print "You stumble around and fall on a knife and die. Good job!"
+
+
+		
+
+
 
 
 
