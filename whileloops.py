@@ -21,22 +21,24 @@ for num in numbers:
 
 
 # The while-loop still remains here in the code below
+def f(a, b):
+    i = a
+    numbers = []
 
-i = 0
-numbers = []
+    while i < b:
+        print "At te top i is %d" % i
+        numbers.append(i)
 
-while i < 6:
-    print "At the top i is %d" % i
-    numbers.append(i)
-
-    i = i + 1
-    print "Numbers now: ", numbers
-    print "At the bottom i is %d" % i
+        i = i + 1
+        print "Numbers now: ", numbers
+        print "At the bottom i is %d" % i
 
 
-print "The numbers: "
+    print "The numbers: "
 
-for num in numbers:
-    print num
+    for num in numbers:
+        print num
 
+
+f(5, 9)
 
