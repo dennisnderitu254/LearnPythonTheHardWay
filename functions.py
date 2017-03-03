@@ -20,6 +20,8 @@ def bear_room():
     print "The bear has a bunch of honey."
     print "The fat bear is in front of another door."
     print "How are you going to move the bear?"
+    print "You have three choices,take honey, taunt bear , open door."
+
     bear_moved = False
 
     while True:
@@ -42,6 +44,7 @@ def cthulhu_room():
     print "Here you see the great evil Cthulhu."
     print "He, it, whatever stares at you and you go insane."
     print "Do you flee for your life or eat your head?"
+    print "you have a couple of choices, flee or head."
 
     choice = raw_input(">")
 
