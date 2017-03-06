@@ -1,5 +1,6 @@
 # loops and functions
 from sys import exit
+
 def gold_room():
     print "This room is full of gold. How much do you take?"
  #    int () returns an integer object from a number of string
