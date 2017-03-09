@@ -6,7 +6,7 @@
 
 # Instance: What you get when you tell python to create a class
 
-# def : How to definf a function inside a class 
+# def : How to define a function inside a class 
 
 #self: Inside the function is a class, self is a variable for the instance/object being accessed
 
@@ -32,11 +32,13 @@
 
 # class X(object):def M(self,J) means "class X has-a function named M that takes self and  J parameters."
 
-# foo =X() means "set foo to an instance of class X."
+# foo = X() means "set foo to an instance of class X."
 
 # foo.M(J) means "From foo get the M function, and call it with parameters self,J."
 
 # foo.K = Q  means "From foo get  the K attribute and set it to Q."
+
+
 
 
 import random
