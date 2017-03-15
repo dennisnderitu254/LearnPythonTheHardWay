@@ -1,6 +1,6 @@
 class Scene(object):
 	 def enter(self):
-	 	print "This scene is not yet configured. Subcless it and implement enter()."
+	 	print "This scene is not yet configured. Subclass it and implement enter()."
 	 	exit(1)
 
 class Engine(object):
@@ -30,8 +30,9 @@ class Death(Scene):
      ]
 
     def enter(self):
-		print Death.quips[randint(0, len(self.quips)-1)]
-		exit(1)
+        print Death.quips[randint(0, len(self.quips)-1)]
+        exit(1)
+		
 
 class CentralCorridor(Scene):
 
@@ -45,7 +46,7 @@ class CentralCorridor(Scene):
         print "You're running down the central corridor to the Weapons Armory when"
         print "a Gothon jumps out, red scaly skin, dark grimy teeth, and evil clown costume"
         print "flowing around his hate filled body.  He's blocking the door to the"
-        print "Armory and about to pull a weapon to blast you."
+        print "Armory and about to pull a weapon to blast you.You hase a couple of choices: shoot!, dodge! and tell a joke."
 
         action = raw_input("> ")
 
@@ -93,8 +94,8 @@ class LaserWeaponArmory(Scene):
         print "and you need the code to get the bomb out.  If you get the code"
         print "wrong 10 times then the lock closes forever and you can't"
         print "get the bomb.  The code is 3 digits."
-        code = "%d%d%d" % (randint(1,9), randint(1,9), randint(1,9))
-        guess = raw_input("[keypad]> ")
+        code = "%d%d%d" % (randint(1,9),  randint(1,9),  randint(1,9))
+        guess = raw_input("[keypad]>   ")
         guesses = 0
 
         while guess != code and guesses < 10:
